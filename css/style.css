@@ -68,7 +68,9 @@ body {
 
 /* --header-- */
 
-
+.header{
+    border-bottom: 1px solid #E7E9FC;
+}
 
 .header-list {
     display: flex;
@@ -83,7 +85,7 @@ body {
 
 .header-container {
     display: flex;
-    border-bottom: 1px solid #E7E9FC;
+    
 }
 
 
@@ -423,6 +425,7 @@ body {
     letter-spacing: 0.02em;
     color: var(--header-contact-color);
     margin-top: 8px;
+    margin-bottom: 8px;
 
 
 }
@@ -506,13 +509,20 @@ body {
 }
 
 .customers-item:hover,
-.customers-item:focus {
+.customers-item:focus{
     border-color: var(--btn-background-color);
-}
+} 
 
 .customers-icon:hover,
 .customers-icon:focus {
     fill: var(--btn-background-color);
+} 
+
+.customers-item:focus .customers-icon,
+.customers-item:active .customers-icon,
+.customers-item:hover .customers-icon{
+    fill: var(--btn-background-color);
+    
 }
 
 .customers-title {
